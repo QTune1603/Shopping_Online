@@ -2,11 +2,11 @@ FROM node:18
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY api-gateway/package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY api-gateway/. .
 
 EXPOSE 3100
 
